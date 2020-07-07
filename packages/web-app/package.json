@@ -2,7 +2,7 @@
   "name": "web-app",
   "version": "0.0.0",
   "description": "> TODO: description",
-  "author": "twomeetings1 <hhxu@thoughtworks.com>",
+  "author": "twomeetings <hhxu@thoughtworks.com>",
   "homepage": "",
   "license": "ISC",
   "main": "lib/web-app.js",
