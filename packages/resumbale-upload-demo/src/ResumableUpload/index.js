@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import md5 from 'js-md5'
 import axios from 'axios'
-
+import shared from 'shared'
 import './index.css'
 
 function ResumableUpload() {
@@ -11,7 +11,11 @@ function ResumableUpload() {
 		if (window.File && window.FileReader && window.FileList && window.Blob) {
 		} else {
 			alert('The File APIs are not fully supported in this browser.')
-		}
+    }
+    
+    // 执行内部shared库中的方法
+    const max = shared()
+    console.warn(max([1,20,3,10]))
 	})
 
 	const changeHandler = e => {

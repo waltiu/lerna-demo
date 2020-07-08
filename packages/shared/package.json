@@ -1,6 +1,6 @@
 {
   "name": "shared",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "twomeetings <hhxu@thoughtworks.com>",
   "homepage": "",
@@ -8,7 +8,7 @@
   "main": "lib/shared.js",
   "directories": {
     "lib": "lib",
-    "test": "__tests__"
+    "test": "jest"
   },
   "files": [
     "lib"
