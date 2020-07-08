@@ -1,9 +1,6 @@
 stages:
   - build-rntest
 
-stages:
-  - other
-
 custom-build-rntest:
   image: node:12
   stage: build-rntest 
@@ -16,4 +13,7 @@ custom-build-rntest:
 
 other-stages:
  script: echo "other-stages" 
- stage: other
+
+other-stages-on-build-rntest:
+ script: echo "other-stages on-build-rntest" 
+ stage: build-rntest
