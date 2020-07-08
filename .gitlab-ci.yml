@@ -1,9 +1,8 @@
 stages:
   - build-rntest
-  - build-shared
-  - build-web-app
 
-build-rntest:
+custom-build-rntest:
+  stage: build-rntest 
   script: cd ./packages/rntest && npm run build
   only:
     changes:
