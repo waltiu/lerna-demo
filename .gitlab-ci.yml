@@ -7,4 +7,5 @@ custom-build-rntest:
   script: cd ./packages/rntest && npm run build 
   only:
     changes:
-      - ./packages/rntest/**/*
+      - packages/rntest/**/*
+      - .gitlab-ci.yml
