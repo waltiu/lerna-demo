@@ -10,7 +10,8 @@
   },
   "husky":{
     "hooks":{
-      "pre-commit":"echo precommit"
+      "pre-commit":"echo precommit",
+      "pre-push":"node ./scripts/first.js"
     }
   }
 }
