@@ -1,6 +1,9 @@
 stages:
   - build-rntest
 
+stages:
+  - other
+
 custom-build-rntest:
   image: node:12
   stage: build-rntest 
@@ -9,3 +12,8 @@ custom-build-rntest:
     changes:
       - packages/rntest/**/*
       - .gitlab-ci.yml
+
+
+other-stages:
+ script: echo "other-stages" 
+ stage: other
