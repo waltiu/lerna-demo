@@ -4,7 +4,7 @@ stages:
 custom-build-rntest:
   image: node:12
   stage: build-rntest 
-  script: cd ./packages/rntest && npm run build
+  script: cd ./packages/rntest && npm run build 
   only:
     changes:
-      - packages/rntest/**/*
+      - ./packages/rntest/**/*
