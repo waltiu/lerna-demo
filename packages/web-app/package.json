@@ -14,7 +14,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "echo WebAppProject"
   },
   "devDependencies": {
     "chalk": "^4.1.0",

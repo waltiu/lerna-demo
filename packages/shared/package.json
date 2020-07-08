@@ -8,7 +8,8 @@
   "main": "lib/shared.js",
   "directories": {
     "lib": "lib",
-    "test": "jest"
+    "test": "jest",
+    "build": "echo SharedProject"
   },
   "files": [
     "lib"

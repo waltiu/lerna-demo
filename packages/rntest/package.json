@@ -6,7 +6,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build":"echo StartBuildRNtestProject"
   },
   "dependencies": {
     "lodash": "^4.17.15",
