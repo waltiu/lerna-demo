@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "check":"node ./scripts/check-package-json.js"
+  },
   "devDependencies": {
     "husky": "^4.2.5",
     "lerna": "^3.22.1"
@@ -11,7 +14,7 @@
   "husky":{
     "hooks":{
       "pre-commit":"echo precommit",
-      "pre-push":"node ./scripts/first.js"
+      "pre-push":"node ./scripts/check-package-json.js"
     }
   }
 }
