@@ -11,8 +11,6 @@ custom-build-rntest:
       - .gitlab-ci.yml
 
 
-other-stages:
- script: echo "other-stages" 
 
 other-stages-on-build-rntest:
  script: echo "other-stages on-build-rntest" 
