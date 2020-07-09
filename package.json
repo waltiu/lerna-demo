@@ -5,16 +5,17 @@
     "packages/*"
   ],
   "scripts": {
-    "check":"node ./scripts/check-package-json.js"
+    "check": "node ./scripts/check-package-json.js"
   },
   "devDependencies": {
+    "danger": "^10.2.1",
     "husky": "^4.2.5",
     "lerna": "^3.22.1"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"echo precommit",
-      "pre-push":"node ./scripts/check-package-json.js"
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo precommit",
+      "pre-push": "node ./scripts/check-package-json.js"
     }
   }
 }
