@@ -1,0 +1,13 @@
+build-web-app:
+  image: node:12
+  stage: build
+  script: cd ./packages/web-app && npm run build 
+  only:
+    changes:
+      - packages/web-app/**/*
+      - .gitlab-ci.yml
+
+
+job-in-diff-config-files:
+ script: echo "job-in-diff-config-files" 
+ stage: build
