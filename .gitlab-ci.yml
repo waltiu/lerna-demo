@@ -1,7 +1,7 @@
 stages:
   - build
 
-include: './.gitlab-ci-web-app.yml'
+include: '.gitlab-ci-web-app.yml'
 
 custom-build-rntest:
   image: node:12
