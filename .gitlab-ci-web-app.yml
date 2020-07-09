@@ -11,5 +11,3 @@ build-web-app:
 job-in-diff-config-files:
  script: echo "job-in-diff-config-files" 
  stage: build
- tags:
-    - web-app

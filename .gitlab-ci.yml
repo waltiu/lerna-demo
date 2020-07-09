@@ -1,5 +1,6 @@
 stages:
   - build
+  - deploy
 
 include: '.gitlab-ci-web-app.yml'
 
@@ -15,7 +16,14 @@ custom-build-rntest:
 other-stages-on-build-rntest:
  script: echo "other-stages on-build-rntest" 
  stage: build
- tags:
-    - rntest
+
+cross-pipeline:
+ stage: deploy
+ trigger: my
+ only:
+    changes:
+      - packages/rntest/**/*
+      - .gitlab-ci.yml
+
 
 
