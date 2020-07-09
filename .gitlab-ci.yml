@@ -1,17 +1,19 @@
 stages:
   - build-rntest
 
-custom-build-rntest:
-  image: node:12
-  stage: build-rntest 
-  script: cd ./packages/rntest && npm run build 
-  only:
+
+only:
     changes:
       - packages/rntest/**/*
       - .gitlab-ci.yml
 
-
+custom-build-rntest:
+  image: node:12
+  stage: build-rntest 
+  script: cd ./packages/rntest && npm run build 
 
 other-stages-on-build-rntest:
  script: echo "other-stages on-build-rntest" 
  stage: build-rntest
+
+
