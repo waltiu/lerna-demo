@@ -1,7 +1,11 @@
 stages:
   - build
+  - check
 
 include: '.gitlab-ci-web-app.yml'
+
+variables:
+  DANGER_GITLAB_API_TOKEN: 'Q7-nZ4pUkL_UtcP4zHLt'
 
 custom-build-rntest:
   image: node:12
@@ -17,5 +21,12 @@ other-stages-on-build-rntest:
  stage: build
 
 
-
+danger-eslint-jest-check:
+  image: node:12
+  stage: check
+  script:
+    - echo startDangerScript
+    - npx danger ci --failOnErrors -v
+  only:
+    - merge_requests
 
