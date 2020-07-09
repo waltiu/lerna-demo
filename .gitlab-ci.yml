@@ -19,7 +19,7 @@ other-stages-on-build-rntest:
 
 cross-pipeline:
  stage: deploy
- trigger: my
+ trigger: twomeetings/lerna-demo-rntest-cicd
  only:
     changes:
       - packages/rntest/**/*
