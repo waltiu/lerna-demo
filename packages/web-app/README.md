@@ -11,5 +11,3 @@ const webApp = require('web-app');
 ```
 
 will not trigger ci of rntest1
-
-trigger web-app
