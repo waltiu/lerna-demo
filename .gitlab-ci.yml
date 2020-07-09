@@ -15,5 +15,7 @@ custom-build-rntest:
 other-stages-on-build-rntest:
  script: echo "other-stages on-build-rntest" 
  stage: build
+ tags:
+    - rntest
 
 
