@@ -11,4 +11,4 @@ if (!title.startsWith('feature/')) {
 }
 
 // console.warn('=== danger.github:')
-// console.warn(JSON.stringify(danger.github))
+console.warn(JSON.stringify(danger.github.pr))
